@@ -8,7 +8,7 @@
     margin-bottom: 50px;
   }
   &__inner {
-    background-image: url(../../img/projects/projects-bg.png);
+    background-image: url("../../img/projects/projects-bg.png");
     background-repeat: no-repeat;
     padding: 160px 85px 0px 50px;
 
@@ -112,7 +112,7 @@
       }
       &:last-child {
         background-color: transparent;
-        background-image: url(../../img/projects/li-bg.png);
+        background-image: url("../../img/projects/li-bg.png");
         height: 130px;
         background-repeat: no-repeat;
         background-position: bottom;
