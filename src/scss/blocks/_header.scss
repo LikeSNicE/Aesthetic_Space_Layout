@@ -43,6 +43,8 @@
     }
   }
   &__menu-btn {
-    order: -1;
+    @include desk-1020{
+      order: -1;
+    }
   }
 }
