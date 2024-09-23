@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
+
+
+
+html {
+	scroll-behavior: smooth;
+	background-color: rgb(39, 39, 39);
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-main);
+	text-wrap: balance;
+  font-weight: var(--font-weight);
+  line-height: 1.2; //  высоту строки  делям на размер текста  19 на 16 получаем line height
+}
+
+img {
+	display: block;
+}
+
+a {
+	color: var(--link-color);
+}
+
+/* Контейнер */
+.container {
+	margin: 0 auto;
+	padding: 0 var(--container-padding);
+
+	max-width: var(--container-width);
+	width: 100%;
+
+}
+
+pre.code {
+	overflow-x: auto;
+	background-color: #e9f1f6;
+	padding: 1rem;
+	border-radius: 4px;
+}
+
+.btn{
+  border-radius: 30px;
+  padding: 18px 65px;
+  background-color: var(--white);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--black);
+  
+}

@@ -1,0 +1,206 @@
+.projects {
+  margin-top: -70px;
+  margin-bottom: 80px;
+  @include desk-1020 {
+    margin-top: 0;
+  }
+  @include tablet-770 {
+    margin-bottom: 50px;
+  }
+  &__inner {
+    background-image: url(../../img/projects/projects-bg.png);
+    background-repeat: no-repeat;
+    padding: 160px 85px 0px 50px;
+
+    @include desk-1240 {
+      padding: 160px 40px 20px 50px;
+      border-bottom-right-radius: 30px;
+    }
+
+    @include desk-1020 {
+      background-image: none;
+      background-color: var(--caramel);
+      border-radius: 30px;
+      padding: 50px 50px 20px;
+    }
+    @include tablet-770 {
+      padding: 50px 10px 20px;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    @include tablet-770 {
+      margin-bottom: 20px;
+    }
+  }
+  &__slider {
+    margin-top: -150px;
+    padding-bottom: 5px !important;
+    @include desk-1020 {
+      margin-top: 0px;
+    }
+  }
+  &__slide-title {
+    max-width: 441px;
+    text-align: right;
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: 115px; // 115
+    margin-bottom: 50px;
+    @include tablet-770 {
+      font-size: 30px;
+      margin-right: 0;
+      margin-bottom: 20px;
+      // display: none;
+    }
+  }
+  &__slide-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+    @include desk-1020 {
+      flex-wrap: wrap;
+    }
+    @include tablet-770 {
+      gap: 25px;
+    }
+  }
+
+  &__slide-subtitle {
+    font-weight: 700;
+    margin-bottom: 15px;
+    max-width: 318px;
+  }
+  &__slide-text {
+    max-width: 318px;
+    margin-bottom: 45px;
+    @include desk-1020 {
+      max-width: 100% !important;
+    }
+  }
+  &__slide-info {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    margin-top: -80px;
+    @include desk-1020 {
+      margin-top: -40px;
+      justify-content: right;
+    }
+    @include tablet-770 {
+      flex-wrap: wrap;
+    }
+    li {
+      width: 120px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background-color: var(--brown);
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 20px;
+      text-transform: uppercase;
+      position: relative;
+      @include tablet-770 {
+        width: 48%;
+      }
+      &:last-child {
+        background-color: transparent;
+        background-image: url(../../img/projects/li-bg.png);
+        height: 130px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        text-align: center;
+        @include tablet-770 {
+          background-size: cover;
+          height: 153px;
+        }
+      }
+      sup {
+        font-size: 12px;
+        margin-top: -4px;
+      }
+      span {
+        position: absolute;
+        bottom: 18px;
+      }
+    }
+    @include tablet-770 {
+      & li:last-child {
+        background-image: none;
+        flex-basis: 100%;
+        background-color: var(--brown);
+      }
+    }
+  }
+  &__slider-btn {
+    position: absolute;
+    // чтобы сбросить стили swiper
+    top: auto !important;
+    bottom: 0;
+
+    background-color: var(--caramel);
+    border-radius: 30px;
+    width: 68px !important;
+    height: 39px !important;
+    &::after {
+      display: none;
+    }
+
+    @include desk-1240 {
+      background-color: var(--brown);
+      width: 44px !important;
+      height: 30px !important;
+    }
+  }
+  & .swiper-button-next {
+    right: 0;
+  }
+  & .swiper-button-prev {
+    left: auto;
+    right: 554px;
+    @include desk-1240 {
+      right: 2px;
+      bottom: 43px;
+    }
+  }
+}
+.projects .swiper-button-next {
+  @include desk-1240 {
+    right: 2px;
+    bottom: 43px;
+  }
+  @include desk-1020 {
+    right: 24px;
+    bottom: 9px;
+    left: auto;
+  }
+  @include tablet-770 {
+    right: 5px;
+    bottom: 0px;
+    left: auto;
+  }
+}
+.projects .swiper-button-prev {
+  @include desk-1240 {
+    right: 392px;
+    bottom: 43px;
+    left: auto;
+  }
+  @include desk-1020 {
+    left: 24px;
+    bottom: 9px;
+    right: auto;
+  }
+  @include tablet-770 {
+    right: auto;
+    bottom: 0px;
+    left: 5px;
+  }
+}

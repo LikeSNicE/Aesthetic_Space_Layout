@@ -1,0 +1,35 @@
+.statistics {
+  margin-bottom: 50px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    @include tablet-770 {
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    background-color: var(--caramel);
+    padding: 16px 40px;
+    text-align: center;
+    border-radius: 30px;
+    flex-basis: 33.333333%;
+    @include tablet-770 {
+      flex-basis: 100%;
+    }
+    @include mobile-350{
+      padding: 10px;
+    }
+  }
+  &__num {
+    font-size: 96px;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+.container {
+}

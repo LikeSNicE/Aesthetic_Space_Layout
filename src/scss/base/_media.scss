@@ -1,0 +1,22 @@
+.container {
+  @include desk-1240 {
+    max-width: 1000px;
+  }
+  @include desk-1020 {
+    max-width: 768px;
+  }
+  @include tablet-770 {
+    max-width: 414px;
+  }
+}
+
+.btn {
+  @include tablet-770 {
+    padding: 18px 50px;
+    font-size: 18px;
+    margin-right: auto !important;
+  }
+  @include mobile-420 {
+    padding: 18px 30px;
+  }
+}
